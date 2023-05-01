@@ -1,0 +1,68 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #222645;
+  font-family: "Poppins", sans-serif;
+}
+
+.sections {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.sections .section-1,
+.sections .section-2,
+.sections .section-3 {
+  position: relative;
+  max-width: 100vh;
+  max-height: 100vh;
+  margin: 25px;
+}
+.sections .section-1 .img,
+.sections .section-2 .img,
+.sections .section-3 .img {
+  position: absolute;
+  z-index: 100;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.sections .section-1 .img p,
+.sections .section-2 .img p,
+.sections .section-3 .img p {
+  color: rgb(215, 215, 215);
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+.sections .section-1 img,
+.sections .section-2 img,
+.sections .section-3 img {
+  z-index: -10;
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 8px;
+}
+
+.progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  width: 100%;
+  height: 5px;
+  background-color: #2c2c2c;
+}
+.progress .bar {
+  display: block;
+  width: 0;
+  height: inherit;
+  background-image: linear-gradient(90deg, #33ffbb, #31acff, #2ad39f, #0170f0);
+}/*# sourceMappingURL=main.css.map */
